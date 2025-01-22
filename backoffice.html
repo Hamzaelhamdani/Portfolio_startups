@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backoffice - Portfolio Startups</title>
+    <link rel="stylesheet" href="src/css/backoffice.css">
+</head>
+<body>
+    <header>
+        <h1>Gestion du Backoffice</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Retour à l'accueil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="backoffice-container">
+        <section id="add-startup">
+            <h2>Ajouter une Startup</h2>
+            <form action="http://localhost:5000/add-startup" method="POST" enctype="multipart/form-data">
+
+                <label for="logo">Logo :</label>
+                <input type="file" id="logo" name="logo" accept="image/*">
+
+                <label for="name">Nom de la Startup :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="pitch">One Line Pitch :</label>
+                <input type="text" id="pitch" name="pitch" required>
+
+                <label for="sector">Secteur :</label>
+                <input type="text" id="sector" name="sector" required>
+
+                <label for="link">URL :</label>
+                <input type="url" id="link" name="link">
+
+                <label for="contact-firstname">Prénom :</label>
+                <input type="text" id="contact-firstname" name="contact_firstname" required>
+
+                <label for="contact-lastname">Nom :</label>
+                <input type="text" id="contact-lastname" name="contact_lastname" required>
+
+                <label for="pitch-deck">Pitch Deck :</label>
+                <input type="file" id="pitch-deck" name="pitch_deck" accept="application/pdf">
+
+                <button type="submit">Ajouter</button>
+            </form>
+            <div id="form-feedback" style="margin-top: 10px; color: green;"></div>
+        </section>
+
+        <section id="manage-startups">
+            <h2>Gérer les Startups</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Logo</th>
+                        <th>Nom</th>
+                        <th>Secteur</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Les startups seront ajoutées dynamiquement ici -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 - Backoffice Portfolio Startups</p>
+    </footer>
+    <script src="src/js/backoffice.js"></script>
+</body>
+</html>

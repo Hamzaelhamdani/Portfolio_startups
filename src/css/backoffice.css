@@ -1,0 +1,138 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #ff6600;
+    margin-top: 20px;
+}
+nav {
+    text-align: center;
+    margin: 10px 0;
+}
+
+nav a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Formulaire d'ajout */
+#add-startup form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#add-startup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+#add-startup input[type="text"],
+#add-startup input[type="url"],
+#add-startup input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#add-startup button {
+    display: block;
+    width: 100%;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-startup button:hover {
+    background-color: #e65c00;
+}
+
+/* Gestion des startups */
+#manage-startups {
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#manage-startups table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#manage-startups table th, #manage-startups table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#manage-startups table th {
+    background-color: #ff6600;
+    color: white;
+}
+
+#manage-startups table td button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+#manage-startups table td button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #add-startup form {
+        padding: 15px;
+    }
+    #manage-startups table th, #manage-startups table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

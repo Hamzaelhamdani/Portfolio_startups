@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Fab - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Open+Sans:300|Oxygen|Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&family=Sora:wght@600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAF6F7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: #FAF6F2;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            border-bottom: none;
+        }
+
+        .orange-name {
+            color: white;
+            top: 20px;
+        }
+
+        .portfolio-background {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        .logo {
+            position: absolute;
+            top: 25px;
+            left: 15px;
+            height: 75px;
+        }
+
+        header h1 {
+            position: absolute;
+            top: 15px;
+            left: 100px;
+            font-size: 40px;
+            font-weight: bold;
+            color: #000;
+            font-family: 'Rubik One', sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border-radius: 100px;
+            position: absolute;
+            top: 40px;
+            left: 350px;
+            width: 700px;
+            height: 52px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            display: block;
+            text-align: center;
+            font-family: 'Rubik Light', sans-serif;
+        }
+
+        .auth-buttons {
+            display: flex;
+            position: absolute;
+            top: 42px;
+            right: 30px;
+        }
+
+        .auth-buttons button {
+            background-color: #fff;
+            border: none;
+            color: #000;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 100px;
+            cursor: pointer;
+            font-size: 24px;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+
+        section#portfolio {
+            width: 100%;
+            max-width: 1200px;
+            padding: 60px 20px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .portfolio-header {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .portfolio-header h2 {
+            font-size: 150px;
+            color: #FFF;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bolder;
+            position: absolute;
+            top: -230px;
+            left: -150px;
+            transform: translateX(-50%);
+        }
+
+        .portfolio-header h3 {
+            font-size: 90px;
+            color: #343A40;
+            opacity: 7%;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bolder;
+            position: absolute;
+            text-align: center;
+            top: -100px;
+            left: 300px;
+            transform: translateX(-50%);
+        }
+
+        .search-bar {
+            display: flex;
+            width: 80%;
+            height: 63px;
+            padding: 21px 120px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            margin: 0 auto;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .filter-sort {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 35px;
+        }
+
+        .filter-sort-container {
+            display: flex;
+            width: 100%;
+            padding-bottom: 9px;
+            border-bottom: 1px #FF7900 solid;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .sort, .filter {
+            display: flex;
+            align-items: center;
+            margin: 0 15px;
+            position: relative;
+        }
+
+        .sort-icon, .filter-icon {
+            width: 19px;
+            height: 17px;
+            text-align: center;
+            color: #6C757D;
+            font-size: 17px;
+            font-weight: 900;
+            text-transform: capitalize;
+            line-height: 17px;
+            word-wrap: break-word;
+            cursor: pointer;
+        }
+
+        .sort-text, .filter-text {
+            text-align: center;
+            color: #6C757D;
+            font-size: 16px;
+            font-family: Inter, sans-serif;
+            line-height: 17px;
+            word-wrap: break-word;
+            cursor: pointer;
+        }
+
+        .sort-value {
+            font-weight: 700;
+        }
+
+        .sort-arrow, .filter-arrow {
+            width: 10px;
+            height: 5px;
+            border-left: 5px #6C757D solid;
+            border-top: 5px #6C757D solid;
+            border-right: 5px #6C757D solid;
+            cursor: pointer;
+        }
+
+        .sort-menu, .filter-menu {
+            display: none;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 100;
+            width: 150px;
+        }
+
+        .sort-menu.show, .filter-menu.show {
+            display: block;
+        }
+
+        .sort-option, .filter-option {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .sort-option:hover, .filter-option:hover {
+            background-color: #f0f0f0;
+        }
+
+        .startup-count {
+            display: flex;
+            align-items: flex-start;
+            gap: 3.80px;
+            color: #FF7900;
+            font-size: 12.69px;
+            font-family: Inter, serif;
+            line-height: 20px;
+            text-align: right;
+            word-wrap: break-word;
+        }
+
+        .portfolio-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .startup-card {
+            background: #ffffff;
+            border: 2px solid #FF7900;
+            border-radius: 50px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 220px;
+            height: 400px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .startup-card .city {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .startup-card .startup-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin: 10px auto;
+        }
+
+        .startup-card h3 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: black;
+        }
+
+        .startup-card .description {
+            font-size: 14px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .startup-card .tag {
+            font-size: 14px;
+            color: #6C757D;
+            margin: 10px 0;
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #eee;
+            border-radius: 10px;
+        }
+
+        .startup-card .year {
+            font-size: 14px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .startup-card .more-info {
+            background: #000000;
+            color: #ffffff;
+            border: 2px solid #FF7900;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .pagination button {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #FF7900;
+            border-radius: 5px;
+        }
+
+        .pagination button.active {
+            background: #FF7900;
+            color: #fff;
+            border: none;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 300px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        .footer-title {
+            color: #F2F4FF;
+            opacity: 55%;
+            text-align: left;
+        }
+
+        .footer-text {
+            text-align: left;
+        }
+
+        .footer-column p {
+            margin: 5px 0;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-icons img {
+            margin: 0 10px;
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Popup Modal Styles */
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .popup-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="../images/orange.png" alt="Orange Logo" class="logo">
+    <h1 class="orange-name">Orange Fab</h1>
+    <img src="../images/portfolioHead.png" alt="Portfolio Head Background" class="portfolio-background">
+    
+</header>
+<main>
+    <section id="portfolio">
+        <div class="portfolio-header">
+            <h2>Portfolio</h2>
+            <h3>Search...</h3>
+            <div class="search-bar">
+                <input type="text" placeholder="What are you looking for?">
+            </div>
+            <div class="filter-sort">
+                <div class="filter-sort-container">
+                    <div class="sort">
+                        <img src="../images/sort.png" alt="Sort image" class="sort-icon" onclick="toggleSortMenu()">
+                        <div class="sort-text">
+                            <span class="sort-label" onclick="toggleSortMenu()">Sort by </span>
+                        </div>
+                        <div class="sort-menu">
+                            <div class="sort-option" onclick="setSortOption('A → Z')">A → Z</div>
+                            <div class="sort-option" onclick="setSortOption('Z → A')">Z → A</div>
+                            <!-- Add more sort options as needed -->
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <img src="../images/filter.png" alt="Filter image" class="filter-icon" onclick="toggleFilterMenu()">
+                        <div class="filter-text" onclick="toggleFilterMenu()">Filter by</div>
+                        <div class="filter-menu">
+                            <div class="filter-option" onclick="setFilterOption('All')">All</div>
+                            <div class="filter-option" onclick="setFilterOption('Option 1')">Option 1</div>
+                            <div class="filter-option" onclick="setFilterOption('Option 2')">Option 2</div>
+                            <!-- Add more filter options as needed -->
+                        </div>
+                    </div>
+                    <div class="startup-count">
+                        <span>455</span> Startups
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio-container" class="portfolio-grid">
+            <!-- Dynamic startup cards will be appended here -->
+        </div>
+        <div class="pagination">
+            <button class="pagination-button">&laquo;</button>
+            <button class="pagination-button active">1</button>
+            <button class="pagination-button">2</button>
+            <button class="pagination-button">3</button>
+            <button class="pagination-button">4</button>
+            <button class="pagination-button">...</button>
+            <button class="pagination-button">38</button>
+            <button class="pagination-button">&raquo;</button>
+        </div>
+    </section>
+</main>
+
+<!-- Popup Modal -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2 id="popup-title">Popup Title</h2>
+        <p id="popup-description">Popup description text goes here.</p>
+        <p id="popup-details"></p>
+        <p id="popup-link"></p>
+        <p id="popup-logo"></p>
+        <p id="popup-year"></p>
+        <p id="popup-tags"></p>
+        <p id="popup-batch"></p>
+        <p id="popup-city"></p>
+    </div>
+</div>
+
+<script>
+    function toggleSortMenu() {
+        document.querySelector('.sort-menu').classList.toggle('show');
+    }
+
+    function toggleFilterMenu() {
+        document.querySelector('.filter-menu').classList.toggle('show');
+    }
+
+    function setSortOption(option) {
+        document.querySelector('.sort-label').innerText = 'Sort by: ' + option;
+        toggleSortMenu();
+    }
+
+    function setFilterOption(option) {
+        document.querySelector('.filter-text').innerText = 'Filter by: ' + option;
+        toggleFilterMenu();
+    }
+
+    function openPopup(title, description, details, link, logo, year, tags, batch, city) {
+        document.getElementById('popup-title').innerText = title;
+        document.getElementById('popup-description').innerText = description;
+        document.getElementById('popup-details').innerText = details;
+        document.getElementById('popup-link').innerHTML = `<a href="${link}" target="_blank">Link</a>`;
+        document.getElementById('popup-logo').innerHTML = `<img src="${logo}" alt="${title}" style="width: 100px;">`;
+        document.getElementById('popup-year').innerText = 'Year: ' + year;
+        document.getElementById('popup-tags').innerText = 'Tags: ' + tags;
+        document.getElementById('popup-batch').innerText = 'Batch: ' + batch;
+        document.getElementById('popup-city').innerText = 'City: ' + city;
+        document.getElementById('popup').style.display = 'block';
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        axios.get('http://127.0.0.1:8000/startups/api/startups/')
+            .then(function (response) {
+                const startups = response.data;
+                const container = document.getElementById('portfolio-container');
+                
+                startups.forEach(startup => {
+                    const box = document.createElement('div');
+                    box.className = 'startup-card';
+                    box.innerHTML = `
+                        <span class="city">${startup.city}</span>
+                        <img src="${startup.logo}" alt="${startup.name}" class="startup-logo">
+                        <h3 class="startup-name">${startup.name}</h3>
+                        <p class="description">${startup.description}</p>
+                        <span class="tag">${startup.tags}</span>
+                        <p class="year">${startup.year}</p>
+                        <button class="more-info" onclick="openPopup('${startup.name}', '${startup.description}', '${startup.details}', '${startup.link}', '${startup.logo}', '${startup.year}', '${startup.tags}', '${startup.batch}', '${startup.city}')">More Info</button>
+                    `;
+                    container.appendChild(box);
+                });
+            })
+            .catch(function (error) {
+                console.error('Error fetching startup data:', error);
+            });
+    });
+</script>
+</body>
+</html>
