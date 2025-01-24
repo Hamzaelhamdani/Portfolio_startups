@@ -25,7 +25,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Aligne le contenu vers la gauche */
-    background-color: #FAF6F2;
+    background-color: #000000;
     border-bottom: none;
     height: 150px; /* Ajuster la hauteur si nécessaire */
 }
@@ -61,7 +61,7 @@ header {
 .fab-text {
     font-size: 30px; /* Taille pour "Fab" */
     font-weight: bold;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: 'Rubik One', sans-serif;
     margin-top: -5px;
 }
