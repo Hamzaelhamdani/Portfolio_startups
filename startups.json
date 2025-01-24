@@ -1,0 +1,197 @@
+{
+  "startups": [
+      {
+          "Startup Name": "ToumAI Analytics",
+          "ONE LINE PITCH": "ToumAI helps companies optimize service quality and performance by uncovering customer pain points and predicting churn through its multilingual, AI-first integrated solution.",
+          "Secteur": "CX - AI",
+          "Catalogue": "B2B",
+          "Link": "www.toum.ai",
+          "Logo": "logos/Logo-ToumAI-scaled.png"
+      },
+      {
+          "Startup Name": "Hsabati",
+          "ONE LINE PITCH": "Hsabati is a management and financing superapp for SMBs in emerging markets.",
+          "Secteur": "Fintech",
+          "Catalogue": "B2B",
+          "Link": "www.hsabati.com",
+          "Logo": "logos/hsabati~1.png"
+      },
+      {
+          "Startup Name": "Paylik",
+          "ONE LINE PITCH": "Plateforme de bien-être financier qui simplifie et rationalise le processus de gestion des avances salariales. Les employés peuvent demander et recevoir instantanément une partie de leur salaire gagné via une carte prépayée, avec un suivi disponible sur une application mobile dédiée.",
+          "Secteur": "Fintech",
+          "Catalogue": "B2B",
+          "Link": "www.paylik.ma",
+          "Logo": "logos/paylik.png"
+      },
+      {
+          "Startup Name": "DeepLeaf",
+          "ONE LINE PITCH": "DeepLeaf, spécialisée dans l'agritech, elle se consacre à l'amélioration de la durabilité et de la productivité agricoles en fournissant des solutions innovantes basées sur l'intelligence artificielle.",
+          "Secteur": "AgriTech",
+          "Catalogue": "B2B",
+          "Link": "www.deepleaf.io",
+          "Logo": "logos/deepleaf-logo-light.png"
+      },
+      {
+          "Startup Name": "SAVEY",
+          "ONE LINE PITCH": "Savey partenaire dans l'antigaspillage alimentaire industriel.",
+          "Secteur": "FoodTech",
+          "Catalogue": "B2B",
+          "Link": "www.savey.ma/fr/products",
+          "Logo": "logos/savey.png"
+      },
+      {
+          "Startup Name": "KWIKS FRC",
+          "ONE LINE PITCH": "La plateforme de Kwiks permet aux entreprises de recruter jusqu'à trois fois plus rapidement et à moindre coût en les connectant à un réseau de plus de 450 chasseurs de têtes indépendants. Parmi ses outils innovants figurent HAFIDA, une IA de présélection basée sur des entretiens vidéo automatisés, et R2DS, qui génère des rapports détaillés sur les candidats.",
+          "Secteur": "HR-Tech",
+          "Catalogue": "B2B",
+          "Link": "www.kwiks.io/",
+          "Logo": "logos/kwiks.png"
+      },
+      {
+          "Startup Name": "Solers",
+          "ONE LINE PITCH": "Une plateforme qui génère automatiquement des scorecards, conduit des entretiens interactifs avec les candidats, et fournit des transcriptions d'entretiens, permettant ainsi aux équipes RH d'évaluer efficacement les compétences et de prendre des décisions d'embauche éclairées.",
+          "Secteur": "HR-Tech",
+          "Catalogue": "B2B",
+          "Link": "www.solers.io",
+          "Logo": "logos/solers.png"
+      },
+      {
+          "Startup Name": "Petalens",
+          "ONE LINE PITCH": "Petalens is a powerful SaaS platform that empowers users to capture, track and analyse media, social media, and web mentions in real-time, providing the insights they need to make smarter, data-driven decisions with confidence.",
+          "Secteur": "Digital Media",
+          "Catalogue": "B2B",
+          "Link": "www.petalens.com",
+          "Logo": "logos/petalens.png"
+      },
+      {
+          "Startup Name": "QUANLINT",
+          "ONE LINE PITCH": "Qualint revolutionizes customer experience sectors with AI-driven quality assurance, offering real-time monitoring, actionable insights, and customizable KPIs to enhance operational efficiency and customer satisfaction.",
+          "Secteur": "CX - AI",
+          "Catalogue": "B2B",
+          "Link": "www.qualint.ai",
+          "Logo": "logos/qualint.png"
+      },
+      {
+          "Startup Name": "ALPHA DATA",
+          "ONE LINE PITCH": "Alpha Data revolutionizes retail by offering AI-powered real-time customer insights and cost-effective analytics, empowering stores to enhance engagement, optimize layouts, and boost sales.",
+          "Secteur": "CX - AI",
+          "Catalogue": "B2B",
+          "Link": "www.alphadata.solutions",
+          "Logo": "logos/alpha data.png"
+      },
+      {
+          "Startup Name": "Cambiste.ma",
+          "ONE LINE PITCH": "Une plateforme numérique marocaine dédiée à la gestion des bureaux de change. Elle offre des outils intuitifs pour faciliter la gestion des stocks et des transactions quotidiennes des cambistes.",
+          "Secteur": "Fintech",
+          "Catalogue": "B2B",
+          "Link": "www.cambiste.ma/",
+          "Logo": "logos/cambiste.png"
+      },
+      {
+          "Startup Name": "Fygurs",
+          "ONE LINE PITCH": "Fygurs est une plateforme intégrée qui aide les entreprises à combler l'écart entre la planification stratégique et l'exécution, en veillant à ce que les initiatives numériques, de données et d'intelligence artificielle maximisent leur valeur et aboutissent à un véritable succès.",
+          "Secteur": "Transformation - AI",
+          "Catalogue": "B2B",
+          "Link": "www.fygurs.com/",
+          "Logo": "logos/fygurs.png"
+      },
+      {
+          "Startup Name": "Mariages.io",
+          "ONE LINE PITCH": "Mariages.io est une plateforme en ligne gratuite dédiée à l'organisation de mariages au Maroc. Elle offre aux futurs mariés des outils pratiques pour planifier leur grand jour, notamment en facilitant la recherche des meilleurs prestataires, la gestion des invités et l'exploration d'idées de décoration inspirantes.",
+          "Secteur": "Services",
+          "Catalogue": "B2B",
+          "Link": "www.mariages.io",
+          "Logo": "logos/Mariages.io.png"
+      },
+      {
+          "Startup Name": "Carteo",
+          "ONE LINE PITCH": "Carte visite 3.0 - Une solution phygitale écologique intégrant un module d’intelligence artificielle permettant de développer son networking.",
+          "Secteur": "Services",
+          "Catalogue": "B2B",
+          "Link": "www.carteo.io",
+          "Logo": "logos/Carteo.png"
+      },
+      {
+          "Startup Name": "AZA petrosolutions",
+          "ONE LINE PITCH": "Aza Petrosolutions est une startup spécialisée dans la conception des solutions technologiques et la création d'objets intelligents et connectés (IOT), dédiées au secteur pétrolier.",
+          "Secteur": "Pétrolier - IOT",
+          "Catalogue": "B2B",
+          "Link": "www.aza.ma/",
+          "Logo": "logos/AZA petrosolutions.png"
+      },
+      {
+          "Startup Name": "AgriEdge",
+          "ONE LINE PITCH": "Une entreprise spécialisée dans les solutions digitales pour l'agriculture de précision, visant à améliorer les rendements agricoles grâce à des conseils personnalisés sur les besoins en eau et en nutriments, ainsi qu'à la prévention des pertes.",
+          "Secteur": "AgriTech",
+          "Catalogue": "B2B",
+          "Link": "www.agriedge.ma/",
+          "Logo": "logos/agriedge.png"
+      },
+      {
+          "Startup Name": "Nucleon security",
+          "ONE LINE PITCH": "Nucleon Security est une entreprise française spécialisée dans la cybersécurité, offrant une plateforme EDR (Endpoint Detection and Response) alimentée par l'intelligence artificielle et le paradigme Zero-Trust. Leur solution, Nucleon Smart Endpoint, permet une vision précise des endpoints et de leurs activités, facilitant la détection des attaques, une réponse efficace et une remédiation rapide des incidents de sécurité.",
+          "Secteur": "Cybersecurité",
+          "Catalogue": "B2B",
+          "Link": "www.nucleon-security.com/",
+          "Logo": "logos/Nucleon security.png"
+      },
+      {
+          "Startup Name": "ShareID",
+          "ONE LINE PITCH": "Solution d'authentification forte liée à l'identité officielle en temps réel.",
+          "Secteur": "Cybersecurité",
+          "Catalogue": "B2B",
+          "Link": "www.shareid.ai/",
+          "Logo": "logos/ShareID.png"
+      },
+      {
+          "Startup Name": "Foodeals",
+          "ONE LINE PITCH": "Global Food waste management system, that connects food industry players with users to sell them their unsold products.",
+          "Secteur": "FoodTech",
+          "Catalogue": "B2B",
+          "Link": "www.foodeals.ma",
+          "Logo": "logos/Foodeals.png"
+      },
+      {
+          "Startup Name": "PipipYalah",
+          "ONE LINE PITCH": "Pip Pip Yalah is a long-distance carpooling application, leader in mobility in Morocco, with a community of more than 400,000 members who are carpooling through their platforms every day.",
+          "Secteur": "Mobility",
+          "Catalogue": "B2B , B2C",
+          "Link": "www.pippipyalah.com/",
+          "Logo": "logos/PipipYalah.png"
+      },
+      {
+          "Startup Name": "Freterium",
+          "ONE LINE PITCH": "Une plateforme collaborative de gestion et de suivi des expéditions, permettant aux industriels, distributeurs et logisticiens de planifier, optimiser et suivre en temps réel leurs opérations de transport.",
+          "Secteur": "Logistique",
+          "Catalogue": "B2B",
+          "Link": "www.freterium.com/",
+          "Logo": "logos/Freterium.png"
+      },
+      {
+          "Startup Name": "SportMA",
+          "ONE LINE PITCH": "The Airbnb of Sports Activities in Morocco.",
+          "Secteur": "Services",
+          "Catalogue": "B2B , B2C",
+          "Link": "www.bookizone.ma/",
+          "Logo": "logos/sportma.png"
+      },
+      {
+          "Startup Name": "Cuimer",
+          "ONE LINE PITCH": "Cuimer transforms fish waste into exotic leather thanks to her biodegradable technology.",
+          "Secteur": "Retail",
+          "Catalogue": "B2B , B2C",
+          "Link": "www.cuimer.com/fr/",
+          "Logo": "logos/Cuimer.png"
+      },
+
+      {
+          "Startup Name": "Nextronic",
+          "ONE LINE PITCH": "Une galaxie technologique et un co-constructeur de grandes transformations disruptives.",
+          "Secteur": "IOT",
+          "Catalogue": "B2B",
+          "Link": "www.aba.technology/",
+          "Logo": "logos/Nextronic.png"
+      }
+  ]
+}

@@ -8,37 +8,24 @@
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <h1>Portfolio des Startups</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                </ul>
-            </nav>
+        <div class="header-content">
+            <img src="../images/orange.png" alt="Orange Logo" class="logo">
+            <div class="text-container">
+                <span class="orange-text">Orange</span>
+                <span class="fab-text">Fab</span>
+            </div>
         </div>
+        <img src="../images/portfolioHead.png" alt="Portfolio Head Background" class="portfolio-background">
     </header>
+    
+    
     <main>
         <section id="search">
             <input type="text" id="search-bar" placeholder="Rechercher une startup..." class="search-bar">
         </section>
         <section id="startups">
-            <!-- Startups will be displayed dynamically -->
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 - Votre Organisation</p>
-    </footer>
-
-    <div id="modal-overlay" class="modal-overlay">
-        <div class="modal">
-            <button id="modal-close" class="modal-close">&times;</button>
-            <h2 id="modal-header"></h2>
-            <div id="modal-body" class="modal-body"></div>
-        </div>
-    </div>
-    
-
-
     <script src="src/js/script.js"></script>
 </body>
 </html>
